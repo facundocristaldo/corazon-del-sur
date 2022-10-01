@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/tienda/index.js" defer></script>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tienda - Corazón del Sur</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="/">
+                <img src="/assets/full_logo_white.png" alt="Logo" />
+            </a>
+            <ul>
+                <li><a href="/sobre-nosotros" class="typography-paragraph">Sobre nosotros</a></li>
+                <li><img src="/assets/icon-cart.svg" alt="Cart" /></li>
+                <li><img src="/assets/icon-user.svg" alt="User" /></li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="store-content">
+        <section id="search-bar">
+            <label for="search-input" class="typography-paragraph">
+                Buscar:
+                <input id="search-input" class="typography-paragraph search-input"
+                    placeholder="Vinilo, astrología..." />
+                <img src="/assets/icon-search.svg" alt="Search" />
+            </label>
+            <div class="search-bar-actions">
+                <button class="button-list-view" id="button-list-view" onclick="changeLayout()">
+                    <img src="/assets/icon-view-box.svg" alt="View as Boxes" />
+                </button>
+                <div class="filters-container">
+                    <button class="button-filter" id="button-filter" onclick="openFilter()">
+                        <img src="/assets/icon-filter-empty.svg" alt="View as Boxes" />
+                    </button>
+                    <div class="filters-box dp-01">
+                        <ul class="filters-list">
+                            <li>
+                                <label class="typography-label" for="category-select">Categoría</label>
+                                <select id="category-select" class="typography-field">
+                                    <option value="todo">Todo</option>
+                                    <option value="tarot">Tarot</option>
+                                    <option value="tejido">Tejido</option>
+                                    <option value="astrologia">Astrología</option>
+                                    <option value="decoracion">Decoración</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label class="typography-label" for="price-min">Desde</label>
+                                <input id="price-min" type='number' placeholder="$ 10" class="typography-field" />
+                            </li>
+                            <li>
+                                <label class="typography-label" for="price-max">Hasta</label>
+                                <input id="price-max" type='number' placeholder="$ 1000" class="typography-field" />
+                            </li>
+                        </ul>
+                        <div class="actions">
+                            <button class="button-small button-link" onclick="clearFilter()">Limpiar</button>
+                            <button class="button-small button-secondary" onclick="applyFilter()">Aplicar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <ul id="viewlist">
+        </ul>
+    </div>
+    <section id="page-footer">
+        <div class="content">
+            <ul class="column">
+                <li class="typography-heading">Dónde ubicarnos</li>
+                <li class="typography-paragraph">26 de marzo, 1129</li>
+                <li class="typography-paragraph">Montevideo, Uruguay</li>
+            </ul>
+            <ul class="column">
+                <li class="typography-heading">Tienda online</li>
+                <li class="typography-paragraph">Todos los productos</li>
+                <li class="typography-paragraph">Términos y condiciones</li>
+                <li class="typography-paragraph">Ley de protección al consumidor</li>
+            </ul>
+            <ul class="column">
+                <li class="typography-heading">Sobre nosotros</li>
+                <li class="typography-paragraph">Nuestro equipo</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

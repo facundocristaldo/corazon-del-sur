@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --color-primary-main: #ed6f7e;
+  --color-primary-dark: #ba4d5a;
+  --color-primary-light: #feb4bc;
+  --color-gold: #f5dd00;
+  --color-page-background: #fffcfc;
+  --color-text-disabled: #949494;
+  --color-disabled: #ebebeb;
+  --color-accent-light: #ffffff;
+  --color-accent-dark: #111111;
+  --max-width-content: 1300px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  font-size: 16px;
+}
+@media screen and (max-width: 992px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+body {
+  background-color: var(--color-page-background);
+  font-family: "Poppins", sans-serif;
+  color: var(--color-accent-dark);
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+select,
+textarea,
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+/* Typography*/
+
+.typography-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 6rem;
+}
+
+.typography-subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.typography-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.typography-paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.typography-small-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.typography-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.5rem;
+}
+.typography-field {
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: var(--color-accent-light);
+  outline: none;
+}
+/* End Typography */
+
+/* Buttons */
+
+.button-small {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.button-regular {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.button-primary {
+  background-color: var(--color-primary-main);
+  color: var(--color-accent-light);
+  transition-property: color, background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+.button-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+.button-primary:disabled,
+.button-secondary:disabled {
+  background-color: var(--color-disabled);
+  color: var(--color-text-disabled);
+}
+
+.button-secondary {
+  background-color: var(--color-primary-light);
+  color: var(--color-accent-light);
+  transition-property: color, background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+.button-secondary:hover {
+  background-color: var(--color-primary-main);
+  color: var(--color-accent-light);
+}
+
+.button-tertiary {
+  border-width: 1px;
+  border-style: solid;
+  background: transparent;
+  border-color: var(--color-primary-main);
+  color: var(--color-primary-main);
+  transition-property: color, background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+.button-tertiary:hover {
+  border-color: var(--color-primary-dark);
+  color: var(--color-primary-dark);
+}
+.button-tertiary:disabled {
+  border-color: var(--color-disabled);
+  color: var(--color-text-disabled);
+}
+
+.button-link {
+  color: var(--color-primary-main);
+  background: transparent;
+  transition-property: color, background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.button-link:hover {
+  color: var(--color-primary-dark);
+  opacity: 1;
+}
+.button-link:disabled {
+  color: var(--color-text-disabled);
+  opacity: 0.5;
+}
+
+/* End Buttons */
+
+/* Shadows */
+.dp-01 {
+  box-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.05);
+}
+.dp-02 {
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
+}
+/* End Shadows */
+
+/* Navbar */
+nav {
+  background-color: var(--color-accent-dark);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+nav div.navbar {
+  width: 100vw;
+  max-width: var(--max-width-content);
+  padding: 0 2rem;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div.navbar img {
+  height: 3.125rem;
+}
+@media screen and (max-width: 768px) {
+  nav div.navbar img {
+    width: 1.875rem;
+    object-fit: cover;
+    object-position: left;
+  }
+}
+
+nav div.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+nav div.navbar ul li a {
+  color: var(--color-accent-light);
+}
+/* End Nabar */
+
+#page-footer {
+  margin-top: 4.5rem;
+  min-height: 12.5rem;
+  background-color: var(--color-accent-light);
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 -0.25rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+#page-footer .content {
+  margin: 0 auto;
+  width: 100vw;
+  max-width: var(--max-width-content);
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#page-footer .content .column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 0.5rem;
+}
+.stars img {
+  width: 2rem;
+}
+@media screen and (max-width: 576px) {
+  #page-footer {
+    padding: 3rem 0;
+  }
+  #page-footer .content {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #page-footer .content .column {
+    align-items: center;
+  }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tienda - Corazon del Sur</title>
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="/">
+                <img src="/assets/full_logo_white.png" alt="Logo Corazon del Sur" />
+            </a>
+            <ul>
+                <li><a href="/sobre-nosotros" class="typography-paragraph">Sobre nosotros</a></li>
+                <li><img id='cart-icon' src="/assets/icon-cart.svg" alt="Cart" /></li>
+                <li><img src="/assets/icon-user.svg" alt="User" /></li>
+            </ul>
+
+        </div>
+    </nav>
+    <section id="product" class="dp-01">
+        <div>
+
+            <div class="heading">
+                <h1 class="typography-heading">Agenda Solar de Bruja Moderna ~ 2023</h1>
+                <div class="stars">
+                    <img src="/assets/icon-star-filled.svg" alt="Producto">
+                    <img src="/assets/icon-star-filled.svg" alt="Producto">
+                    <img src="/assets/icon-star-filled.svg" alt="Producto">
+                    <img src="/assets/icon-star-filled.svg" alt="Producto">
+                    <img src="/assets/icon-star-contained.svg" alt="Producto">
+                </div>
+            </div>
+            <div class="detail">
+                <div class="images">
+                    <div class="tiles">
+                        <img src="/assets/productos/agenda/agenda1.jpeg" alt="Producto" onclick="changeImg(0)">
+                        <img src="/assets/productos/agenda/agenda2.jpeg" alt="Producto" onclick="changeImg(1)">
+                        <img src="/assets/productos/agenda/agenda3.jpeg" alt="Producto" onclick="changeImg(2)">
+                    </div>
+                    <img id="bigImg" src="/assets/productos/agenda/agenda1.jpeg" alt="Producto">
+                </div>
+                <div class="info">
+                    <div class="heading">
+                        <h1 class="typography-heading">Agenda Solar de Bruja Moderna ~ 2023</h1>
+                        <div class="stars">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-contained.svg" alt="Producto">
+                        </div>
+                    </div>
+                    <div class="other">
+                        <div class="main">
+                            <div class="priceHolder">
+                                <p class="typography-title">$343</p>
+                                <p class="typography-heading">Envío gratis</p>
+                            </div>
+                            <div class="actions">
+                                <button class="button-primary button-regular">Comprar</button>
+                                <button class="button-link button-small" onclick="addToCart()">Agregar al
+                                    carrito</button>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p class="typography-paragraph">
+                                Llegó la hermosa agenda solar de bruja moderna ~ 2021 ☀️ En ella encontrarás info
+                                sobre la
+                                energía del sol en su recorrido a través del zodíaco y su relación con los
+                                arquetipos
+                                del tarot, explicado de manera simple y amigable ✨
+                                <br />•2 páginas de stickers ~ amuleto: los signos del zodíaco y elementos mágicos 💎
+                                <br />• calendario lunar para hemisferio sur y hemisferio norte 🌑
+                                <br />• tips semanales para aprovechar la energía lunar disponible 🌙
+                                <br />• planificadores mensuales 👁• páginas extra para notas ⚡️
+                                <br />• tapa dura con calado y detalles metalizados 💫
+                                <br />• marcapáginas con regla y cierre elástico 💦
+                                <br />• tamaño: 15 x 21 cms 📓
+                                <br />• páginas: 240 🌸
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="additional">
+            <div class="comments">
+                <div class="heading">
+                    <h3 class="typography-heading">Opiniones sobre Agenda Solar de Bruja Moderna ~2023</h3>
+                    <div class="points">
+                        <p class="typography-title">4.2</p>
+                        <div class="stars">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-contained.svg" alt="Producto">
+                        </div>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="stars">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-contained.svg" alt="Producto">
+                        </div>
+                        <p class="typography-small-title">Muy bueno</p>
+                        <p class="typography-paragraph">Me encantó muchisimos, es un placer siempre poder tener
+                            productos de Corazon del Sur</p>
+                    </li>
+                    <li>
+                        <div class="stars">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                        </div>
+                        <p class="typography-small-title">Excelente</p>
+                        <p class="typography-paragraph">
+                            Son hermosas y muy completas ya tengo la mia recomiendo 100% corazon del sur!!❤️
+                        </p>
+                    </li>
+                    <li>
+                        <div class="stars">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-filled.svg" alt="Producto">
+                            <img src="/assets/icon-star-contained.svg" alt="Producto">
+                            <img src="/assets/icon-star-contained.svg" alt="Producto">
+                        </div>
+                        <p class="typography-small-title">Bueno</p>
+                        <p class="typography-paragraph">Tiene bonita estetica y muy útil al momento de tomar notas y
+                            llevar a cabo una organización.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="featured-prods">
+                <h3 class="typography-heading">Productos destacados</h3>
+                <ul class="prods">
+                    <li class="prod">
+                        <img src="/assets/productos/agenda1.jpeg" alt="Producto">
+                        <div class="details">
+                            <p class="typography-paragraph">Agendas Universo de Bruja Moderna ~ 2022</p>
+                            <p class="typography-field">Las agendas que no te pueden faltar este 2022 para poder tener
+                                toda tu vida organizada y no dejar que las mala energeias te afecten en la rutina y
+                                compromisos.</p>
+                            <p class="typography-paragraph">$345</p>
+                        </div>
+                    </li>
+                    <li class="prod">
+                        <img src="/assets/productos/oraculo.jpeg" alt="Producto">
+                        <div class="details">
+                            <p class="typography-paragraph">Los 4 acuerdos + El quinto acuerdo</p>
+                            <p class="typography-field">Dos lecturas para disfrutar en cualquier momento y para
+                                compartir o regalar a la persona cercana que busca conectarse con su espiritualidad.</p>
+                            <p class="typography-paragraph">$489</p>
+                        </div>
+                    </li>
+                    <li class="prod">
+                        <img src="/assets/productos/libro2.jpeg" alt="Producto">
+                        <div class="details">
+                            <p class="typography-paragraph">Un curso de Milagros</p>
+                            <p class="typography-field">Ponete manos a la obra con este curso que te permitirá
+                                manifestar aquello que tanto deseas y que internamente te hace bien. Crece de la mano
+                                con del gran escritor Lucio Fachini y su espiritualidad mágica.</p>
+                            <p class="typography-paragraph">$399</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+    <section id="page-footer">
+        <div class="content">
+            <ul class="column">
+                <li class="typography-heading">Dónde ubicarnos</li>
+                <li class="typography-paragraph">26 de marzo, 1129</li>
+                <li class="typography-paragraph">Montevideo, Uruguay</li>
+            </ul>
+            <ul class="column">
+                <li class="typography-heading">Tienda online</li>
+                <li class="typography-paragraph">Todos los productos</li>
+                <li class="typography-paragraph">Términos y condiciones</li>
+                <li class="typography-paragraph">Ley de protección al consumidor</li>
+            </ul>
+            <ul class="column">
+                <li class="typography-heading">Sobre nosotros</li>
+                <li class="typography-paragraph">Nuestro equipo</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

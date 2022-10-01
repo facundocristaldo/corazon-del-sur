@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Biblioteca de Esoterismo de TASCHEN",
+    "stars": 4,
+    "price": 899,
+    "freeShipping": true,
+    "imgSrc": "/assets/productos/libro1.jpeg",
+    "categories": [""]
+  },
+  {
+    "name": "Agendas Universo de Bruja Moderna ~ 2022",
+    "stars": 5,
+    "price": 345,
+    "freeShipping": true,
+    "imgSrc": "/assets/productos/agenda1.jpeg",
+    "categories": [""]
+  },
+  {
+    "name": "Agenda Solar de Bruja Moderna ~ 2023",
+    "stars": 4,
+    "price": 343,
+    "freeShipping": true,
+    "imgSrc": "/assets/productos/agenda/agenda1.jpeg",
+    "categories": [""]
+  },
+  {
+    "name": "Agendas Cristal de Bruja Moderna ~ 2022",
+    "stars": 3,
+    "price": 379,
+    "freeShipping": true,
+    "imgSrc": "/assets/productos/agenda2.jpeg",
+    "categories": [""]
+  },
+  {
+    "name": "Los 4 acuerdos + El quinto acuerdo",
+    "stars": 3,
+    "price": 489,
+    "freeShipping": true,
+    "imgSrc": "/assets/productos/oraculo.jpeg",
+    "categories": [""]
+  },
+  {
+    "name": "Un curso de Milagros",
+    "stars": 4,
+    "price": 399,
+    "freeShipping": true,
+    "imgSrc": "/assets/productos/libro2.jpeg",
+    "categories": [""]
+  }
+]

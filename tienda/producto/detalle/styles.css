@@ -1,0 +1,201 @@
+nav div.navbar ul {
+  gap: 1rem;
+}
+.navbar ul li img {
+  height: 2rem;
+  width: 2rem;
+}
+
+#product {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  width: 95vw;
+  padding: 1rem 1rem 3rem 1rem;
+  margin: 4.125rem auto;
+  background-color: var(--color-accent-light);
+  border-radius: 1rem;
+  margin-top: 6.25rem;
+}
+#product > div > .heading {
+  display: none;
+}
+
+#product .detail {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+#product .detail .images {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+}
+#product .detail .images .tiles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+#product .detail .images .tiles img {
+  object-fit: cover;
+  width: 5.25rem;
+  height: 5.25rem;
+  border-radius: 0.5rem;
+}
+#product .detail .images > img {
+  flex: 1;
+  height: 34.375rem;
+  width: 34.375rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  max-width: 40vw;
+}
+
+#product .detail .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  padding: 0.5rem 1rem;
+}
+#product .detail .info .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#product .detail .info .other {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#product .detail .info .other .main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#product .priceHolder {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+#product .priceHolder .typography-title {
+  line-height: 100%;
+}
+#product .actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.additional {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.additional .comments {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.additional .comments .heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.additional .comments .heading .points {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+.additional .comments .heading .points .typography-title {
+  line-height: 100%;
+}
+.additional .comments .heading .points .stars {
+  display: flex;
+}
+
+.additional .comments ul.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.additional .comments ul.list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.additional .featured-prods {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.additional .featured-prods ul.prods {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.additional .featured-prods ul.prods li.prod {
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+}
+.additional .featured-prods ul.prods li.prod img {
+  width: 9.125rem;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.additional .featured-prods ul.prods li.prod .details {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0px;
+  gap: 0.25rem;
+}
+
+.additional .featured-prods ul.prods li.prod .details .typography-field {
+  padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+  #product > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #product > div > .heading {
+    display: block;
+  }
+  #product .detail .info .heading {
+    display: none;
+  }
+  #product .additional {
+    gap: 5rem;
+  }
+  #product .detail .info .other {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #product .detail .images > img {
+    width: 10rem;
+  }
+  #product .detail {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #product .detail .images > img {
+    max-width: -webkit-fill-available;
+  }
+}
