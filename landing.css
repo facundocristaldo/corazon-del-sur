@@ -185,20 +185,20 @@
   border-color: var(--color-accent-light);
 }
 #sesion-tarot {
-  background-image: url("/assets/fotos/sesion-tarot-1.jpeg");
+  background-image: url("/corazon-del-sur/assets/fotos/sesion-tarot-1.jpeg");
 }
 #sesion-astrologica {
-  background-image: url("/assets/fotos/sesion-astrologica-1.jpeg");
+  background-image: url("/corazon-del-sur/assets/fotos/sesion-astrologica-1.jpeg");
 }
 #curso-tejido {
-  background-image: url("/assets/fotos/clases-tejido-3.jpeg");
+  background-image: url("/corazon-del-sur/assets/fotos/clases-tejido-3.jpeg");
 }
 #curso-astrologia {
-  background-image: url("/assets/fotos/clases-astrologia-4.jpeg");
+  background-image: url("/corazon-del-sur/assets/fotos/clases-astrologia-4.jpeg");
   background-position: top;
 }
 #curso-tarot {
-  background-image: url("/assets/fotos/clases-tarot-1.jpeg");
+  background-image: url("/corazon-del-sur/assets/fotos/clases-tarot-1.jpeg");
 }
 
 .section-fade-in {
@@ -233,7 +233,7 @@
   height: 32.125rem;
   width: 100%;
   border-radius: 1rem;
-  background-image: url("/assets/map.png");
+  background-image: url("/corazon-del-sur/assets/map.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
