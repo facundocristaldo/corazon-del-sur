@@ -45,7 +45,7 @@ function renderItem(item, index) {
   img.alt = `Producto ${item.name}`;
 
   function navigateProduct() {
-    window.location.href = "/tienda/producto/detalle";
+    window.location.href = "/corazon-del-sur/tienda/producto/detalle";
   }
   li.onclick = navigateProduct;
 
