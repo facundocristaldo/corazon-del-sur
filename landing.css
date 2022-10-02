@@ -168,7 +168,7 @@
   width: 83vw;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 6rem;
+  bottom: 4rem;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 1rem;
   color: var(--color-accent-light);
@@ -383,5 +383,8 @@
   }
   #links .link-card:nth-child(1) {
     display: flex;
+  }
+  .we-do.section .description {
+    bottom: 8rem;
   }
 }
