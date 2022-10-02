@@ -14,9 +14,9 @@ function displayImg() {
 function displayCart() {
   const cart = document.querySelector("#cart-icon");
   if (cartHasItems) {
-    cart.src = "/assets/icon-cart-items.svg";
+    cart.src = "/corazon-del-sur/assets/icon-cart-items.svg";
   } else {
-    cart.src = "/assets/icon-cart.svg";
+    cart.src = "/corazon-del-sur/assets/icon-cart.svg";
   }
 }
 

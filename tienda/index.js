@@ -5,11 +5,11 @@ function changeLayout() {
   const buttonImg = document.querySelector("#button-list-view > img");
   if (layout === "box") {
     layout = "list";
-    buttonImg.src = "/assets/icon-view-box.svg";
+    buttonImg.src = "/corazon-del-sur/assets/icon-view-box.svg";
     buttonImg.alt = "Mostrar en cuadricula";
   } else {
     layout = "box";
-    buttonImg.src = "/assets/icon-view-list.svg";
+    buttonImg.src = "/corazon-del-sur/assets/icon-view-list.svg";
     buttonImg.alt = "Mostrar como lista";
   }
   displayItems();
@@ -19,10 +19,10 @@ function renderStars(number) {
   stars.className = "stars";
 
   const filled = document.createElement("img");
-  filled.src = "/assets/icon-star-filled.svg";
+  filled.src = "/corazon-del-sur/assets/icon-star-filled.svg";
   filled.alt = "+1";
   const contained = document.createElement("img");
-  contained.src = "/assets/icon-star-contained.svg";
+  contained.src = "/corazon-del-sur/assets/icon-star-contained.svg";
   contained.alt = "0";
 
   for (let index = 0; index < number; index++) {
@@ -103,7 +103,7 @@ function openFilter() {
 function applyFilter() {
   filter = "on";
   const buttonImg = document.querySelector("#button-filter>img");
-  buttonImg.src = "/assets/icon-filter-applied.svg";
+  buttonImg.src = "/corazon-del-sur/assets/icon-filter-applied.svg";
   const filtersBox = document.querySelector(".filters-box");
   filtersBox.classList.remove("open");
 }
@@ -111,7 +111,7 @@ function applyFilter() {
 function clearFilter() {
   filter = "off";
   const buttonImg = document.querySelector("#button-filter>img");
-  buttonImg.src = "/assets/icon-filter-empty.svg";
+  buttonImg.src = "/corazon-del-sur/assets/icon-filter-empty.svg";
   const filtersBox = document.querySelector(".filters-box");
   filtersBox.classList.remove("open");
 
