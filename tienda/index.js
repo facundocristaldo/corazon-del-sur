@@ -83,7 +83,7 @@ function displayItems() {
   const list = document.querySelector("ul#viewlist");
   list.className = `${layout}`;
   list.innerHTML = "";
-  fetch("/assets/products.json")
+  fetch("/corazon-del-sur/assets/products.json")
     .then((res) => {
       return res.json();
     })
