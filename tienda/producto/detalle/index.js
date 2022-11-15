@@ -2,9 +2,9 @@ let indexImgToShow = 0;
 let cartHasItems = false;
 
 const images = [
-  "/assets/productos/agenda/agenda1.jpeg",
-  "/assets/productos/agenda/agenda2.jpeg",
-  "/assets/productos/agenda/agenda3.jpeg",
+  "/corazon-del-sur/assets/productos/agenda/agenda1.jpeg",
+  "/corazon-del-sur/assets/productos/agenda/agenda2.jpeg",
+  "/corazon-del-sur/assets/productos/agenda/agenda3.jpeg",
 ];
 
 function displayImg() {
